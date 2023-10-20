@@ -1,0 +1,130 @@
+@import url(base.css);
+
+/***** MOBILE *****/
+
+/* Header */
+header {
+  background-image: var(--light-bg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+#logo {
+  width: 115px;
+}
+
+.click-group button {
+  border: none;
+  background: unset;
+  cursor: pointer;
+}
+
+.click-group i {
+  font-size: 4rem;
+  color: var(--dark-color);
+}
+
+.click-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.click-group .close {
+  display: none;
+}
+
+.click-group .open {
+  margin-left: auto;
+}
+
+@media(max-width: 768px) {
+  .navigation.active .nav-list{
+    background: var(--dark-bg);
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 100px;
+    color: var(--light-color);
+  }
+  .navigation.active .nav-link {
+    text-align: center;
+    font-size: 4rem;
+  }
+}
+
+.navigation .nav-list{
+  display: none;
+}
+
+.navigation.active .nav-link:active {
+  color: var(--primary-color);
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  height: 100px;
+}
+
+.nav-link {
+  font-size: 1.7rem;
+  display: inline-block;
+  color: var(--dark-color);
+  padding-bottom: .2em;
+  box-shadow: none;
+  transition: all .3s;
+}
+
+/***** MEDIA QUERIES - TABLETS AND ABOVE *****/
+
+@media(min-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+
+  .container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 2.5em;
+  }
+
+  .click-group button {
+    display: none !important; 
+  }
+
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation .nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-item:not(:first-child) {
+    margin-left: 1.5em;
+  }
+
+  .nav-link:hover {
+    box-shadow: 0px 1px 0px 0px var(--primary-color);
+    color: var(--primary-color);
+  }
+}
