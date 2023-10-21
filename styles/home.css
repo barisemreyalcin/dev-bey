@@ -28,7 +28,7 @@
   display: inline-block;
   background: linear-gradient(180deg, var(--primary-color), rgb(225, 0, 0) );
   color: var(--light-color);
-  padding: 1em 2em;
+  padding: 0.8em 2em;
   margin: 1.5em 0;
   transition: transform .4s;
 }

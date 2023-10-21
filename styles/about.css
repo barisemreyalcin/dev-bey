@@ -1,0 +1,257 @@
+@import url(base.css);
+
+/***** MOBILE *****/
+
+/* About */
+.about {
+  margin-top: 100px;
+  min-height: calc(100vh - 100px);
+  background-image: var(--dark-bg);
+  color: var(--light-color);
+}
+
+.about main {
+  padding: 3em 0;
+}
+
+.about h2 {
+  font-size: 2.4rem;
+  margin-top: 0;
+  margin-bottom: 1.2em;
+  text-align: center;
+}
+
+.about h3 {
+  position: relative;
+  font-size: 2rem;
+  margin: 0;
+  padding: 1em 0 .5em 0;
+}
+
+.about h3 > i {
+  position: absolute;
+  right: 0;
+  top: 25px;
+}
+
+.about .about-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2em;
+}
+
+.about .about-header .badges {
+  order: 3;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+}
+
+.about .badges span {
+  font-size: 1.2rem;
+  padding: .4em .8em;
+  border-radius: 10px;
+  background-color: var(--medium-color);
+  color: var(--dark-color);
+}
+
+.about .about-header figure {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 30%;
+  outline: 3px solid var(--primary-color);
+}
+
+.about .about-header figure img {
+  width: 70px;
+  animation: brightness-and-scale 2s ease-out infinite alternate;
+}
+
+.about .about-intro {
+  padding: 1em 0 0 0;
+}
+
+.about .about-intro p {
+  text-align: justify;
+}
+
+.about .accordion-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .6s ease-out;
+}
+
+.about .accordion-container.accordion-active {
+  max-height: 100vh;
+  transition: max-height .6s ease-in;
+}
+
+.about .accordion-container .accordion-item {
+  background-color: var(--medium-color);
+  color: var(--dark-color);
+  padding: 1em;
+  border-radius: .5em;
+  margin-bottom: 1.75em;
+  margin-top: 1em;
+  box-shadow: 0 2px 2px var(--dark-color), 0 6px var(--medium-color), 0 8px 2px var(--dark-color), 0 12px var(--medium-color);
+}
+
+.about .about-section .accordion-header {
+  cursor: pointer;
+  border-bottom: 1px dashed var(--primary-color);
+}
+
+.about .about-section .accordion-header:active {
+  color: var(--primary-color);
+}
+
+.about .accordion-container ul li::before{
+  content: "-";
+  display: inline;
+  margin-right: 3px;
+}
+
+.about .accordion-container .accordion-item-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about .accordion-container h4 {
+  margin: .5em 0;
+}
+
+.about .accordion-container h4,
+.about .accordion-container .company,
+.about .accordion-container .school {
+  background-color: var(--light-color);
+  color: var(--primary-color);
+  padding: .4em .6em;
+  border-radius: 4px;
+}
+
+.about .accordion-container .company,
+.about .accordion-container .school {
+  text-decoration: underline;
+  transition: transform .3s;
+}
+
+.about .accordion-container .time-period {
+  display: inline-block;
+  margin-top: .9em;
+  font-size: 1.2rem;
+}
+
+.about .accordion-container ul {
+  margin-top: .5em;
+}
+
+.about .accordion-container .flex-accordion {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: .5em;
+  flex-wrap: wrap;
+}
+
+.about .accordion-container .flex-accordion h4 {
+  font-size: 1.4rem;
+}
+
+.about .accordion-container .flex-accordion i {
+  margin-left: .3em;
+}
+
+@keyframes brightness-and-scale {
+  0% {
+    filter: brightness(85%);
+  }
+  100% {
+    filter: brightness(100%);
+    transform: scale(1.12);
+  }
+}
+
+@keyframes behind-to-front {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media(min-width: 768px) {
+  .about .about-section:first-child h3 {
+    margin-top: 1em;
+  }
+
+  .about h3 {
+    transition: color .3s;
+  }
+
+  .about h3:hover {
+    color: var(--primary-color);
+  }
+
+  .about h2 {
+    font-size: 3rem;
+  }
+
+  .about .about-header .badges {
+    order: 0;
+    width: unset;
+  }
+
+  .about .about-header figure img {
+    width: 100px;
+  }
+
+  .about .about-header figure {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 30%;
+    outline: 3px solid var(--primary-color);
+  }
+
+  .about .about-intro {
+    padding-top: 2em;
+}
+
+  .about .about-intro p {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+
+  .about .accordion-container .accordion-item-title {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about .accordion-container .company:hover,
+  .about .accordion-container .school:hover {
+    transform: scale(1.04);
+  }
+
+
+  .behind-to-front {
+    animation: behind-to-front .5s ease-in-out;
+  }
+}
+
+@media(min-width: 992px) {
+  .about main {
+    padding: 6em 0;
+  }
+}

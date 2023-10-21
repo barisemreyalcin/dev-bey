@@ -42,7 +42,7 @@ header {
 }
 
 @media(max-width: 768px) {
-  .navigation.active .nav-list{
+  .navigation.mobile-menu .nav-list{
     background: var(--dark-bg);
     position: absolute;
     z-index: 10;
@@ -58,7 +58,8 @@ header {
     margin-top: 100px;
     color: var(--light-color);
   }
-  .navigation.active .nav-link {
+  
+  .navigation.mobile-menu .nav-link {
     text-align: center;
     font-size: 4rem;
   }
@@ -68,7 +69,7 @@ header {
   display: none;
 }
 
-.navigation.active .nav-link:active {
+.navigation.mobile-menu .nav-link:active {
   color: var(--primary-color);
 }
 
@@ -126,5 +127,11 @@ header {
   .nav-link:hover {
     box-shadow: 0px 1px 0px 0px var(--primary-color);
     color: var(--primary-color);
+  }
+
+  .nav-link.active {
+    box-shadow: 0px 2px 0px 0px var(--dark-color);
+    color: var(--dark-color) !important;
+    font-weight: 700;
   }
 }
