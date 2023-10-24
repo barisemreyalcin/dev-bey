@@ -14,6 +14,7 @@ header {
 
 #logo {
   width: 115px;
+  display: block;
 }
 
 .click-group button {
@@ -49,19 +50,30 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(100vh - 100px);
+    min-height: calc(100vh - var(--nav-height));
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2em;
-    margin-top: 100px;
+    gap: 1.8em;
+    margin-top: var(--nav-height);
     color: var(--light-color);
   }
   
   .navigation.mobile-menu .nav-link {
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+}
+
+@media(min-width: 576px) and (max-width: 768px) {
+  .navigation.mobile-menu .nav-list{
+    gap: .8em;
+  }
+
+  .navigation.mobile-menu .nav-link {
+    text-align: center;
+    font-size: 2rem;
   }
 }
 
@@ -78,7 +90,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: space-between;
-  height: 100px;
+  height: var(--nav-height);
 }
 
 .nav-link {
@@ -91,6 +103,8 @@ header {
 }
 
 /***** MEDIA QUERIES - TABLETS AND ABOVE *****/
+
+
 
 @media(min-width: 768px) {
   html {

@@ -4,14 +4,14 @@
 
 /* About */
 .about {
-  margin-top: 100px;
-  min-height: calc(100vh - 100px);
+  margin-top: var(--nav-height);
+  min-height: calc(100vh - var(--nav-height));
   background-image: var(--dark-bg);
   color: var(--light-color);
 }
 
 .about main {
-  padding: 3em 0;
+  padding: 4em 0;
 }
 
 .about h2 {
@@ -126,7 +126,11 @@
 }
 
 .about .accordion-container h4 {
-  margin: .5em 0;
+  margin: 0 0 .5em 0;
+}
+
+.about .interests h4 {
+  margin: 0;
 }
 
 .about .accordion-container h4,
@@ -170,27 +174,7 @@
   margin-left: .3em;
 }
 
-@keyframes brightness-and-scale {
-  0% {
-    filter: brightness(85%);
-  }
-  100% {
-    filter: brightness(100%);
-    transform: scale(1.12);
-  }
-}
-
-@keyframes behind-to-front {
-  from {
-    transform: scale(0.5);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
 /* MEDIA QUERIES */
-
 @media(min-width: 768px) {
   .about .about-section:first-child h3 {
     margin-top: 1em;
