@@ -1,0 +1,211 @@
+@import url(base.css);
+
+/***** MOBILE *****/
+.projects {
+  min-height: calc(100vh - var(--nav-height));
+  margin-top: var(--nav-height);
+  background-image: var(--dark-bg);
+  color: var(--light-color);
+}
+
+.projects main {
+  padding: 4em 0;
+}
+
+.projects h2 {
+  font-size: 2.4rem;
+  margin-top: 0;
+  margin-bottom: 1.2em;
+  text-align: center;
+}
+
+.projects .section-intro{
+  margin-bottom: 3em;
+  text-align: justify;
+}
+
+.projects .all-projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75em;
+  margin-bottom: 2em;
+}
+
+.projects .all-projects .project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  gap: 2em;
+  background-color: var(--dark-color);
+  animation: small-shadow 8s infinite ease-in-out;
+  padding: 1.5em 1.2em;
+  border-radius: 10px;
+  transition: transform .5s;
+}
+
+.projects .all-projects img{
+  width: 100%;
+  position: relative;
+  transition: transform .3s;
+  cursor: pointer;
+}
+
+.projects .all-projects h3 {
+  font-size: 2.2rem;
+  margin: .75em 0;
+  color: var(--medium-color);
+}
+
+.projects .all-projects .project-desc {
+  margin: 0.75em 0 0.25em 0;
+}
+
+.projects .project-desc a.api-link {
+  color: var(--medium-color);
+}
+
+.projects .used-technologies {
+  margin-bottom: 1.2em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.projects .used-technologies span {
+  padding: 0 1em;
+  font-size: 1.1rem;
+  border-radius: 30px;
+}
+
+.html {
+  background-color: rgba(228, 77, 38, .3);
+}
+
+.css {
+  background-color: rgba(33, 76, 229, .3);
+}
+
+.bootstrap {
+  background-color: rgba(135, 10, 251, .3);
+}
+
+.js {
+  background-color: rgba(247, 224, 24, .3);
+}
+
+.react {
+  background-color: rgba(97, 219, 251, .3);
+}
+
+.projects .project .link-group {
+  display: flex;
+  align-items: center;
+  gap: .75em;
+  width: 100%;
+  margin-top: auto;
+}
+
+.projects .project .link-group > a{
+  padding: .5em 1em;
+  border-radius: 5px;
+  color: var(--light-color);
+  box-shadow: 0 0 2px var(--light-color);
+  font-size: 1.4rem;
+  transition: transform .3s;
+}
+
+.projects .project .link-group i {
+  padding-left: 4px;
+}
+
+.projects .project .link-group .go-web-page {
+  background: linear-gradient(180deg, var(--primary-color), rgb(225, 0, 0) );
+}
+
+.projects .project .link-group .go-web-page:active {
+  background: linear-gradient(180deg, rgb(225, 0, 0), var(--primary-color));
+}
+
+.projects .project .link-group .go-github {
+  background: linear-gradient(180deg, var(--dark-color), rgb(0, 0, 0) );
+}
+
+.projects .project .link-group .go-github:active {
+  background: linear-gradient(180deg, rgb(0, 0, 0), var(--dark-color) );
+}
+
+
+/*** MEDIA QUERIES ***/
+
+@media(min-width: 576px) {
+  .projects .used-technologies span {
+    font-size: 1.2rem;
+  }
+}
+
+@media(min-width: 768px) {
+  .projects h2 {
+    font-size: 3rem;
+  }
+
+  .projects .section-intro{
+    font-size: 1.8rem;
+  }
+
+  .projects .all-projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects .all-projects .project {
+    animation: medium-shadow 5s infinite ease, 
+    behind-to-front .75s ease-in-out;
+    position: relative;
+  }
+
+  .projects .used-technologies span {
+    font-size: 1.1rem;
+    border-radius: 30px;
+  }
+
+  .projects .project .link-group > a:hover{
+    transform: scale(1.03);
+  }
+}
+
+@media(min-width: 992px) {
+  .projects main {
+    padding: 6em 0;
+  }
+
+  .projects .all-projects {
+    gap: 2.7em;
+  }
+
+  .projects .all-projects img:hover{
+    transform: translateY(-10px);
+  }
+
+  .projects .all-projects .project-desc {
+    font-size: 1.5rem;
+  }
+}
+
+@media(min-width: 1200px) {
+  .projects .all-projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media(max-width: 350px),
+      (min-width: 768px) and (max-width: 845px),
+      (min-width: 1200px) and (max-width: 1265px) {
+        .projects .project .link-group {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .projects .project .link-group > a {
+          width: 100%;
+        }
+      }

@@ -38,7 +38,7 @@
 }
 
 .skills .certificates .section-intro {
-  margin-bottom: 2.2em;
+  margin-bottom: 1.2em;
 }
 
 .skills .tech-stack-container .skill {
@@ -240,7 +240,7 @@
 }
 
 .skills .language-card .flag {
-  width: 15%;
+  width: 13%;
 }
 
 /*** MEDIA QUERIES ***/
@@ -262,6 +262,10 @@
   .skills .languages .languages-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .skills .language-card .flag {
+    width: 15%;
+  }
 }
 
 @media(min-width: 576px) and (max-width: 768px) {
@@ -279,6 +283,10 @@
 
   .skills .section-intro{
     font-size: 1.8rem;
+    margin-bottom: 2.2em;
+  }
+
+  .skills .certificates .section-intro {
     margin-bottom: 2.2em;
   }
 
