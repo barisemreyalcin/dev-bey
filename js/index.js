@@ -32,22 +32,22 @@ for(let i = 0; i < accordionHeader.length; i++) {
   })
 }
 
-// Rotate Skills
+// Rotate Skills and Project Cards
+const projectCards = document.querySelectorAll(".project");
 const skillBoxes = document.querySelectorAll(".skill");
-function animateSkills(skillBox) {
-  setTimeout(function() {
-    skillBox.style.transform = 'rotate(5deg)';
-    setTimeout(function() {
-      skillBox.style.transform = 'rotate(0deg)';
-    }, 500);
-  }, 500);
+function animateSkills(items, degree, interval) {
+  items.forEach(function (item) {
+    setInterval(function () {
+      item.style.transform = `rotate(${degree}deg)`;
+      setTimeout(function () {
+        item.style.transform = "rotate(0deg)";
+      }, 500);
+    }, `${interval}`);
+  });
 }
 
-skillBoxes.forEach(function(skillBox) {
-  setInterval(function() {
-    animateSkills(skillBox);
-  }, 3500);
-});
+animateSkills(skillBoxes, 5, 3500);
+animateSkills(projectCards, 0.75, 5000);
 
 // Modal
 const smallImgOverlay = document.getElementsByClassName("certificate-overlay"); // we should click overlay because img cannot be clickable because  of the z-index of img
@@ -68,37 +68,45 @@ for(let i = 0; i < smallImg.length; i++) {
 }
 
 // Close Modal
-closeModal.addEventListener("click", function() {
-  modal.style.display = "none";
-})
-
-window.onclick = function(event) {
-  if (event.target == modal) {
+if (closeModal) {
+  closeModal.addEventListener("click", function() {
+    modal.style.display = "none";
+  })
+  
+  window.onclick = function(event) {
+    if (event.target == modal) {
       modal.style.display = "none";
-  }
-};
+    }
+  };
+} else {
+  console.log("closeModal button does not exist on this page.");
+}
 
 // Slider
 const nextImg = document.querySelector(".modal-container .fa-chevron-right");
 const prevImg = document.querySelector(".modal-container .fa-chevron-left");
 
-nextImg.addEventListener("click", function() {
-  currentIndex++;
-  currentIndex === smallImg.length && (currentIndex = 0);
-  imgPath = smallImg[currentIndex].src;
-  largeImg.src = imgPath;
-  largeImg.style.animation = "fadeShadow .5s";
-  reflowAnime();
-})
-
-prevImg.addEventListener("click", function() {
-  currentIndex--;
-  currentIndex === -1 && (currentIndex = smallImg.length - 1);
-  imgPath = smallImg[currentIndex].src;
-  largeImg.src = imgPath;
-  largeImg.style.animation = "fadeShadow .5s";
-  reflowAnime();
-})
+if(nextImg && prevImg) {
+  nextImg.addEventListener("click", function() {
+    currentIndex++;
+    currentIndex === smallImg.length && (currentIndex = 0);
+    imgPath = smallImg[currentIndex].src;
+    largeImg.src = imgPath;
+    largeImg.style.animation = "fadeShadow .5s";
+    reflowAnime();
+  })
+  
+  prevImg.addEventListener("click", function() {
+    currentIndex--;
+    currentIndex === -1 && (currentIndex = smallImg.length - 1);
+    imgPath = smallImg[currentIndex].src;
+    largeImg.src = imgPath;
+    largeImg.style.animation = "fadeShadow .5s";
+    reflowAnime();
+  })
+} else {
+  console.log("Slider does not exist on this page.");
+}
 
 // Reflow Animation
 function reflowAnime() {
