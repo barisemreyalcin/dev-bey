@@ -39,6 +39,7 @@ figure {
 
 a {
   text-decoration: none;
+  color: unset;
 }
 
 a:visited {
@@ -47,9 +48,20 @@ a:visited {
 
 .container {
   max-width: 1200px;
-  width: 95%;
+  width: 92%;
   margin: 0 auto;
   padding: 0;
+}
+
+@media(min-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+
+  .container {
+    width: 90%;
+    padding: 0 2.5em;
+  }
 }
 
 /** Animations **/
@@ -83,6 +95,18 @@ a:visited {
   }
   75% {
     box-shadow: 0 0 22px var(--primary-color);
+  }
+  100% {
+    box-shadow: 0 0 10px var(--primary-color);
+  }
+}
+
+@keyframes medium-shadow {
+  0% {
+    box-shadow: 0 0 10px var(--primary-color);
+  }
+  50% {
+    box-shadow: 0 0 20px var(--primary-color);
   }
   100% {
     box-shadow: 0 0 10px var(--primary-color);

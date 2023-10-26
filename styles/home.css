@@ -91,17 +91,6 @@
 }
 
 @media(min-width: 768px) {
-  html {
-    font-size: 10px;
-  }
-
-  .container {
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
-    padding: 0 2.5em;
-  }
-
   .toggle {
     display: none;
   }
