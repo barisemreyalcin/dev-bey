@@ -20,7 +20,7 @@
 }
 
 .projects .section-intro{
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   text-align: justify;
 }
 
@@ -150,6 +150,7 @@
   }
 
   .projects .section-intro{
+    margin-bottom: 3em;
     font-size: 1.8rem;
   }
 

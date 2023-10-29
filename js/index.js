@@ -35,6 +35,8 @@ for(let i = 0; i < accordionHeader.length; i++) {
 // Rotate Skills and Project Cards
 const projectCards = document.querySelectorAll(".project");
 const skillBoxes = document.querySelectorAll(".skill");
+const btnGroupEl = document.querySelectorAll(".btn-group-el");
+
 function animateSkills(items, degree, interval) {
   items.forEach(function (item) {
     setInterval(function () {
@@ -48,6 +50,7 @@ function animateSkills(items, degree, interval) {
 
 animateSkills(skillBoxes, 5, 3500);
 animateSkills(projectCards, 0.75, 5000);
+animateSkills(btnGroupEl, 30, 3500);
 
 // Modal
 const smallImgOverlay = document.getElementsByClassName("certificate-overlay"); // we should click overlay because img cannot be clickable because  of the z-index of img
@@ -93,7 +96,7 @@ if(nextImg && prevImg) {
     imgPath = smallImg[currentIndex].src;
     largeImg.src = imgPath;
     largeImg.style.animation = "fadeShadow .5s";
-    reflowAnime();
+    reflowAnime(largeImg, "fadeShadow", ".5s", "ease");
   })
   
   prevImg.addEventListener("click", function() {
@@ -102,16 +105,33 @@ if(nextImg && prevImg) {
     imgPath = smallImg[currentIndex].src;
     largeImg.src = imgPath;
     largeImg.style.animation = "fadeShadow .5s";
-    reflowAnime();
+    reflowAnime(largeImg, "fadeShadow", ".5s", "ease");
   })
 } else {
   console.log("Slider does not exist on this page.");
 }
 
 // Reflow Animation
-function reflowAnime() {
-  void largeImg.offsetWidth;
-  largeImg.style.animation = "none";
-  void largeImg.offsetWidth;
-  largeImg.style.animation = "fadeShadow .5s";
+function reflowAnime(item, animationName, duration, timingFnc) {
+  void item.offsetWidth;
+  item.style.animation = "none";
+  void item.offsetWidth;
+  item.style.animation = `${animationName} ${duration} ${timingFnc}`;
+}
+
+// Copy Link To Clipboard
+const emailAddress = document.querySelector(".mail-address");
+const copyBtn = document.querySelector(".copy");
+const alertEl = document.querySelector(".alert");
+
+if(copyBtn) {
+  copyBtn.addEventListener("click", function() {
+    const copiedText = emailAddress.textContent;
+    navigator.clipboard.writeText(copiedText).then(function() {
+      alertEl.style.animation = "alertMove 2.5s ease";
+      reflowAnime(alertEl, "alertMove", "2.5s", "ease");
+    })
+  })
+} else {
+  console.log("Copy button does not exist on this page.");
 }

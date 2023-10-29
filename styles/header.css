@@ -57,12 +57,12 @@ header {
     justify-content: center;
     gap: 1.8em;
     margin-top: var(--nav-height);
-    color: var(--light-color);
   }
   
   .navigation.mobile-menu .nav-link {
     text-align: center;
     font-size: 3rem;
+    color: var(--light-color);
   }
 }
 
@@ -96,7 +96,6 @@ header {
 .nav-link {
   font-size: 1.7rem;
   display: inline-block;
-  color: var(--dark-color);
   padding-bottom: .2em;
   box-shadow: none;
   transition: all .3s;
@@ -132,6 +131,10 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+
+  .nav-link {
+    color: var(--dark-color);
   }
 
   .nav-item:not(:first-child) {

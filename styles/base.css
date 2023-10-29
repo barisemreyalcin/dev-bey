@@ -39,7 +39,7 @@ figure {
 
 a {
   text-decoration: none;
-  color: unset;
+  color: var(--light-color);
 }
 
 a:visited {
@@ -149,5 +149,25 @@ a:visited {
 
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes alertMove {
+  0% {
+    top: 50%;
+    opacity: 0;
+    margin-top: 0;
+  }
+
+  50% {
+    top: 100%;
+    opacity: 1;
+    margin-top: .35em;
+  }
+
+  100% {
+    top: 50%;
+    opacity: 0;
+    margin-top: 0;
   }
 }
