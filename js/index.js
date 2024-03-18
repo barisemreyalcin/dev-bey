@@ -3,33 +3,35 @@ const openNavigationBtn = document.querySelector(".open");
 const closeNavigationBtn = document.querySelector(".close");
 const navigation = document.querySelector(".navigation");
 
-openNavigationBtn.addEventListener("click", function() {
+openNavigationBtn.addEventListener("click", function () {
   navigation.classList.add("mobile-menu");
   closeNavigationBtn.style.display = "inline-block";
   openNavigationBtn.style.display = "none";
-})
+});
 
-closeNavigationBtn.addEventListener("click", function() {
+closeNavigationBtn.addEventListener("click", function () {
   navigation.classList.remove("mobile-menu");
   openNavigationBtn.style.display = "inline-block";
   closeNavigationBtn.style.display = "none";
-})
+});
 
 // Accordion with chevron
 const accordionHeader = document.getElementsByClassName("accordion-header");
-const accordionContainer = document.getElementsByClassName("accordion-container");
+const accordionContainer = document.getElementsByClassName(
+  "accordion-container"
+);
 const chevronIcon = document.getElementsByClassName("fa-chevron-down");
 
-for(let i = 0; i < accordionHeader.length; i++) {
-  accordionHeader[i].addEventListener("click", function() {
+for (let i = 0; i < accordionHeader.length; i++) {
+  accordionHeader[i].addEventListener("click", function () {
     accordionContainer[i].classList.toggle("accordion-active");
-    if(accordionContainer[i].classList.contains("accordion-active")) {
+    if (accordionContainer[i].classList.contains("accordion-active")) {
       chevronIcon[i].style.transform = "rotate(180deg)";
     } else {
       chevronIcon[i].style.transform = "rotate(0)";
     }
     chevronIcon[i].style.transition = "transform .6s";
-  })
+  });
 }
 
 // Rotate Skills and Project Cards
@@ -60,23 +62,23 @@ const closeModal = document.querySelector(".certificate-modal .fa-xmark");
 let largeImg = document.getElementById("modal-image");
 let currentIndex = 0;
 
-for(let i = 0; i < smallImg.length; i++) {
-  smallImgOverlay[i].addEventListener("click", function() {
+for (let i = 0; i < smallImg.length; i++) {
+  smallImgOverlay[i].addEventListener("click", function () {
     let imgPath = smallImg[i].src;
     modal.style.display = "flex";
     largeImg.src = imgPath;
     currentIndex = i;
     largeImg.style.animation = "fadeShadow .5s";
-  })
+  });
 }
 
 // Close Modal
 if (closeModal) {
-  closeModal.addEventListener("click", function() {
+  closeModal.addEventListener("click", function () {
     modal.style.display = "none";
-  })
-  
-  window.onclick = function(event) {
+  });
+
+  window.onclick = function (event) {
     if (event.target == modal) {
       modal.style.display = "none";
     }
@@ -89,24 +91,24 @@ if (closeModal) {
 const nextImg = document.querySelector(".modal-container .fa-chevron-right");
 const prevImg = document.querySelector(".modal-container .fa-chevron-left");
 
-if(nextImg && prevImg) {
-  nextImg.addEventListener("click", function() {
+if (nextImg && prevImg) {
+  nextImg.addEventListener("click", function () {
     currentIndex++;
     currentIndex === smallImg.length && (currentIndex = 0);
     imgPath = smallImg[currentIndex].src;
     largeImg.src = imgPath;
     largeImg.style.animation = "fadeShadow .5s";
     reflowAnime(largeImg, "fadeShadow", ".5s", "ease");
-  })
-  
-  prevImg.addEventListener("click", function() {
+  });
+
+  prevImg.addEventListener("click", function () {
     currentIndex--;
     currentIndex === -1 && (currentIndex = smallImg.length - 1);
     imgPath = smallImg[currentIndex].src;
     largeImg.src = imgPath;
     largeImg.style.animation = "fadeShadow .5s";
     reflowAnime(largeImg, "fadeShadow", ".5s", "ease");
-  })
+  });
 } else {
   console.log("Slider does not exist on this page.");
 }
@@ -124,14 +126,14 @@ const emailAddress = document.querySelector(".mail-address");
 const copyBtn = document.querySelector(".copy");
 const alertEl = document.querySelector(".alert");
 
-if(copyBtn) {
-  copyBtn.addEventListener("click", function() {
+if (copyBtn) {
+  copyBtn.addEventListener("click", function () {
     const copiedText = emailAddress.textContent;
-    navigator.clipboard.writeText(copiedText).then(function() {
-      alertEl.style.animation = "alertMove 2.5s ease";
-      reflowAnime(alertEl, "alertMove", "2.5s", "ease");
-    })
-  })
+    navigator.clipboard.writeText(copiedText).then(function () {
+      alertEl.style.animation = "alertMove 1.75s ease";
+      reflowAnime(alertEl, "alertMove", "1.75s", "ease");
+    });
+  });
 } else {
   console.log("Copy button does not exist on this page.");
 }
