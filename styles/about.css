@@ -25,7 +25,7 @@
   position: relative;
   font-size: 2rem;
   margin: 0;
-  padding: 1em 0 .5em 0;
+  padding: 1em 0 0.5em 0;
 }
 
 .about h3 > i {
@@ -49,12 +49,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: .5em;
+  gap: 0.5em;
 }
 
 .about .badges span {
   font-size: 1.2rem;
-  padding: .4em .8em;
+  padding: 0.4em 0.8em;
   border-radius: 10px;
   background-color: var(--medium-color);
   color: var(--dark-color);
@@ -86,22 +86,23 @@
 .about .accordion-container {
   max-height: 0;
   overflow: hidden;
-  transition: max-height .6s ease-out;
+  transition: max-height 0.6s ease-out;
 }
 
 .about .accordion-container.accordion-active {
   max-height: 100vh;
-  transition: max-height .6s ease-in;
+  transition: max-height 0.6s ease-in;
 }
 
 .about .accordion-container .accordion-item {
   background-color: var(--medium-color);
   color: var(--dark-color);
   padding: 1em;
-  border-radius: .5em;
+  border-radius: 0.5em;
   margin-bottom: 1.75em;
   margin-top: 1em;
-  box-shadow: 0 2px 2px var(--dark-color), 0 6px var(--medium-color), 0 8px 2px var(--dark-color), 0 12px var(--medium-color);
+  box-shadow: 0 2px 2px var(--dark-color), 0 6px var(--medium-color),
+    0 8px 2px var(--dark-color), 0 12px var(--medium-color);
 }
 
 .about .about-section .accordion-header {
@@ -113,7 +114,7 @@
   color: var(--primary-color);
 }
 
-.about .accordion-container ul li::before{
+.about .accordion-container ul li::before {
   content: "-";
   display: inline;
   margin-right: 3px;
@@ -134,32 +135,32 @@
 .about .accordion-container .school {
   background-color: var(--light-color);
   color: var(--primary-color);
-  padding: .4em .6em;
+  padding: 0.4em 0.6em;
   border-radius: 4px;
-  margin: 0 0 .5em 0;
+  margin: 0 0 0.5em 0;
 }
 
 .about .accordion-container .company,
 .about .accordion-container .school {
   text-decoration: underline;
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .about .accordion-container .time-period {
   display: inline-block;
-  margin-top: .9em;
+  margin-top: 0.9em;
   font-size: 1.2rem;
 }
 
 .about .accordion-container ul {
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .about .accordion-container .flex-accordion {
   display: flex;
   align-items: center;
   align-content: center;
-  gap: .5em;
+  gap: 0.5em;
   flex-wrap: wrap;
 }
 
@@ -168,17 +169,17 @@
 }
 
 .about .accordion-container .flex-accordion i {
-  margin-left: .3em;
+  margin-left: 0.3em;
 }
 
 /* MEDIA QUERIES */
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .about .about-section:first-child h3 {
     margin-top: 1em;
   }
 
   .about h3 {
-    transition: color .3s;
+    transition: color 0.3s;
   }
 
   .about h3:hover {
@@ -207,7 +208,7 @@
 
   .about .about-intro {
     padding-top: 2em;
-}
+  }
 
   .about .about-intro p {
     font-size: 1.8rem;
@@ -225,13 +226,12 @@
     transform: scale(1.04);
   }
 
-
   .behind-to-front {
-    animation: behind-to-front .5s ease-in-out;
+    animation: behind-to-front 0.5s ease-in-out;
   }
 }
 
-@media(min-width: 992px) {
+@media (min-width: 992px) {
   .about main {
     padding: 6em 0;
   }

@@ -19,9 +19,9 @@
   text-align: center;
 }
 
-.contact .section-intro{
-    margin-bottom: 2em;
-    text-align: justify;
+.contact .section-intro {
+  margin-bottom: 2em;
+  text-align: justify;
 }
 
 .contact .form-container {
@@ -38,14 +38,14 @@
 
 .contact form .form-content > * {
   width: 100%;
-  padding: .6em 1em;
+  padding: 0.6em 1em;
   font-size: 1.6rem;
   font-family: inherit;
-  border-radius: .25em;
+  border-radius: 0.25em;
 }
 
 .contact form .form-content > *::placeholder {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .contact form .message {
@@ -56,9 +56,9 @@
 .contact form button {
   border: none;
   color: var(--light-color);
-  background: linear-gradient(180deg, var(--primary-color), rgb(225, 0, 0) );
+  background: linear-gradient(180deg, var(--primary-color), rgb(225, 0, 0));
   cursor: pointer;
-  transition: transform .4s;
+  transition: transform 0.4s;
 }
 
 .contact form button:active {
@@ -67,7 +67,7 @@
 
 .contact .additional-contact {
   display: flex;
-  gap: .25em;
+  gap: 0.25em;
 }
 
 .contact .additional-contact .btn-group {
@@ -76,7 +76,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: .25em;
+  gap: 0.25em;
   position: relative;
   z-index: 2;
 }
@@ -88,10 +88,10 @@
   background-color: var(--medium-color);
   color: var(--primary-color);
   font-size: 2rem;
-  padding: 0 .5em;
+  padding: 0 0.5em;
   border-radius: 5px;
   cursor: pointer;
-  transition: all .5s;
+  transition: all 0.5s;
   position: relative;
   z-index: 2;
 }
@@ -113,7 +113,7 @@
 .contact .btn-group .alert {
   position: absolute;
   z-index: 1;
-  font-size: .9rem;
+  font-size: 0.9rem;
   top: 50%;
   opacity: 0;
   background-color: var(--primary-color);
@@ -127,8 +127,8 @@
   background-color: var(--medium-color);
   color: var(--dark-color);
   font-size: 1.4rem;
-  border-radius: .25em;
-  padding: .5em;
+  border-radius: 0.25em;
+  padding: 0.5em;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -137,17 +137,17 @@
 
 .contact .additional-contact .mail-box > p {
   margin: 0;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
-@media(min-width: 460px) {
+@media (min-width: 460px) {
   .contact .btn-group .btn-logo,
   .contact .additional-contact .mail-box {
-    padding: .7em;
-  } 
+    padding: 0.7em;
+  }
 
   .contact .additional-contact .mail-box {
-    gap: .5em;
+    gap: 0.5em;
   }
 
   .contact .btn-group .alert {
@@ -155,7 +155,7 @@
   }
 }
 
-@media(min-width: 576px) {
+@media (min-width: 576px) {
   .contact form .form-content {
     grid-template-columns: 1fr 1fr;
   }
@@ -167,15 +167,15 @@
 
   .contact .btn-group .btn-logo,
   .contact .additional-contact .mail-box {
-    padding: .9em;
-  } 
+    padding: 0.9em;
+  }
 
   .contact .btn-group .alert {
     font-size: 1.1rem;
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .contact .contact-container {
     padding-bottom: 1em;
   }
@@ -184,7 +184,7 @@
     font-size: 3rem;
   }
 
-  .contact .section-intro{
+  .contact .section-intro {
     margin-bottom: 2.5em;
     font-size: 1.8rem;
   }
@@ -202,7 +202,7 @@
   }
 }
 
-@media(min-width: 992px) {
+@media (min-width: 992px) {
   .contact main {
     padding: 6em 0;
   }

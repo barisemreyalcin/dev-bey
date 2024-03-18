@@ -16,23 +16,23 @@
   padding: 4em 0;
 }
 
-#home main h1, 
+#home main h1,
 #home main h2 {
   font-size: 2.4rem;
   line-height: 1.7;
 }
 
-#home main .see-projects a{
+#home main .see-projects a {
   display: inline-block;
-  background: linear-gradient(180deg, var(--primary-color), rgb(225, 0, 0) );
+  background: linear-gradient(180deg, var(--primary-color), rgb(225, 0, 0));
   color: var(--light-color);
   padding: 0.8em 2em;
   margin: 1.5em 0;
-  transition: transform .4s;
+  transition: transform 0.4s;
 }
 
-#home main .see-projects a:active{
-  background: linear-gradient(180deg, rgb(225, 0, 0), var(--primary-color)  );
+#home main .see-projects a:active {
+  background: linear-gradient(180deg, rgb(225, 0, 0), var(--primary-color));
 }
 
 #home main p {
@@ -40,7 +40,7 @@
   font-weight: 700;
   line-height: 1.7;
   margin-top: 0;
-  margin-bottom: .6em !important;
+  margin-bottom: 0.6em !important;
 }
 
 #home main .intro-container {
@@ -53,7 +53,12 @@
 }
 
 #home main .img-container {
-  background-image: linear-gradient(180deg, rgba(250, 250, 250,.4), rgba(250,250,250,.3)), url(../img/light-polygon.jpg);
+  background-image: linear-gradient(
+      180deg,
+      rgba(250, 250, 250, 0.4),
+      rgba(250, 250, 250, 0.3)
+    ),
+    url(../img/light-polygon.jpg);
   border: 20px solid transparent;
   border-image: 20px round;
   border-radius: 50%;
@@ -67,7 +72,12 @@
   border-radius: 50%;
   max-width: 25rem;
   padding: 20px;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0,.5), rgba(0,0,0,.4)), url(../img/dark-polygon.jpg);
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../img/dark-polygon.jpg);
 }
 
 #home main .intro-text {
@@ -76,7 +86,7 @@
 
 #home main .left-move {
   color: var(--primary-color);
-  padding: 0 .3em;
+  padding: 0 0.3em;
 }
 
 #home main h2 .left-move:last-child {
@@ -84,13 +94,13 @@
 }
 
 /***** MEDIA QUERIES *****/
-@media(min-width: 520px) {
+@media (min-width: 520px) {
   h2 br:last-of-type {
     display: none;
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .toggle {
     display: none;
   }
@@ -134,7 +144,7 @@
   }
 }
 
-@media(min-width: 992px) {
+@media (min-width: 992px) {
   #home main .img-container {
     animation-name: shadow, flip-img;
     animation-duration: 4s, 1.5s;
@@ -169,7 +179,7 @@
   #home main .intro-text {
     margin-top: 1.5em;
   }
- 
+
   #home main .see-projects {
     text-align: left;
   }
@@ -186,7 +196,7 @@
   }
 }
 
-@media(min-width:992px) and (max-width: 1040px) {
+@media (min-width: 992px) and (max-width: 1040px) {
   #home main img {
     max-width: 24rem;
   }
@@ -197,7 +207,7 @@
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   #home main img {
     max-width: 31rem;
   }
