@@ -1,621 +1,1372 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="Barış Emre Yalçın, Baris Emre Yalcin, Web Development, DevBey" />
-  <meta name="author" content="Baris Emre Yalcin" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="website icon" type="png" href="img/tab-logo.png">
-  <title>Dev-Bey | Barış Emre Yaçın | Portfolio Website</title>
-</head>
-<body>
-  <header class="header">
-    <div class="container nav-container">
-      <div class="click-group">
-        <a href="index.html"><img id="logo" src="img/dev-bey.png" alt="dev-bey logo"></a>
-        <button class="open">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <button class="close">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Barış Emre Yalçın, Baris Emre Yalcin, Web Development, DevBey"
+    />
+    <meta name="author" content="Baris Emre Yalcin" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="website icon" type="png" href="img/tab-logo.png" />
+    <title>Dev-Bey | Barış Emre Yaçın | Portfolio Website</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav-container">
+        <div class="click-group">
+          <a href="index.html"
+            ><img id="logo" src="img/dev-bey.png" alt="dev-bey logo"
+          /></a>
+          <button class="open">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <button class="close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="skills.html">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="navigation">
-        <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-          <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </header>
+
+    <section id="projects" class="projects">
+      <main class="projects-content">
+        <div class="container projects-container">
+          <section class="section-header">
+            <h2>My Projects</h2>
+            <p class="section-intro">
+              Putting my knowledge into practice and building projects has
+              always pushed me one step further towards becoming a better
+              developer. You can take a glance at some of my projects in this
+              section.
+            </p>
+          </section>
+          <section class="all-projects">
+            <!-- Motion -->
+            <div class="project">
+              <a href="img/projects-img/project-motion.png" target="_blank">
+                <img
+                  src="img/projects-img/project-motion.png"
+                  alt="Motion App image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>Motion</h3>
+                <p class="project-desc">
+                  Motion app is designed based on object-oriented programming
+                  (OOP) principles. It can detect your current position on the
+                  map and allows you to mark your workout location thanks to
+                  <a
+                    class="api-link"
+                    href="https://leafletjs.com/"
+                    target="_blank"
+                    >Leaflet.js</a
+                  >. Moreover, you can collect data for each workout and observe
+                  them in the sidebar.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/motion/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/motion"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Movie Search App -->
+            <div class="project">
+              <a
+                href="img/projects-img/project-movie-search.png"
+                target="_blank"
+              >
+                <img
+                  src="img/projects-img/project-movie-search.png"
+                  alt="Movie Search App image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                  <span class="react">React</span>
+                </div>
+                <h3>Movie Search App</h3>
+                <p class="project-desc">
+                  Movie information is fetched from
+                  <a
+                    class="api-link"
+                    href="https://www.themoviedb.org/"
+                    target="_blank"
+                  >
+                    The Movie Database (TMDB) API</a
+                  >. In this way, users can search for movies and see
+                  corresponding data on the web page.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://movie-search-vite.vercel.app/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/movie-search-app"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- DevBey Portfolio -->
+            <div class="project">
+              <a href="img/projects-img/project-portfolio.png" target="_blank">
+                <img
+                  src="img/projects-img/project-portfolio.png"
+                  alt="Dev-Bey Portfolio image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>DevBey Portfolio</h3>
+                <p class="project-desc">
+                  All visitors can check out the source code of this portfolio
+                  website coded by me that you are currently on.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/dev-bey/index.html"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/dev-bey"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Bank App -->
+            <div class="project">
+              <a href="img/projects-img/project-bankapp.png" target="_blank">
+                <img
+                  src="img/projects-img/project-bankapp.png"
+                  alt="Bank App image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>Bank App</h3>
+                <p class="project-desc">
+                  Bank App allows you to perform and monitor real-time
+                  transactions. Log in using following credentials: <br />
+                  &SmallCircle; User 1: bey & 8888 <br />
+                  &SmallCircle; User 2: jt & 1111
+                </p>
+              </div>
+
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/bankapp/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/bankapp"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- SneakerHoops -->
+            <div class="project">
+              <a
+                href="img/projects-img/project-sneakerhoops.png"
+                target="_blank"
+              >
+                <img
+                  src="img/projects-img/project-sneakerhoops.png"
+                  alt="SneakerHoops image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>SneakerHoops</h3>
+                <p class="project-desc">
+                  SneakerHoops is a template for an online shoe store with a
+                  professional design, allowing users to partially interact with
+                  the platform.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/sneakerhoops/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/sneakerhoops"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Momentum Dashboard -->
+            <div class="project">
+              <a href="img/projects-img/project-dashboard.png" target="_blank">
+                <img
+                  src="img/projects-img/project-dashboard.png"
+                  alt="Momentum Dashboard image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>Momentum Dashboard</h3>
+                <p class="project-desc">
+                  Momentum Dashboard project operates as a browser extension
+                  allows user to use personalized dashboard on their browsers.
+                  It supplies many different data via
+                  <a
+                    class="api-link"
+                    href="https://unsplash.com/developers"
+                    target="_blank"
+                    >Unsplash Image API</a
+                  >,
+                  <a class="api-link" href="https://openweathermap.org/api"
+                    >Open Weather API</a
+                  >,
+                  <a
+                    class="api-link"
+                    href="https://www.coingecko.com/en/api"
+                    target="_blank"
+                    >CoinGecko Crypto API</a
+                  >, and Geolocation.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/momentum-personal-dashboard/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/momentum-personal-dashboard"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Expense Tracker -->
+            <div class="project">
+              <a
+                href="img/projects-img/project-expense-tracker.png"
+                target="_blank"
+              >
+                <img
+                  src="img/projects-img/project-expense-tracker.png"
+                  alt="Expense Tracker image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                  <span class="react">React</span>
+                </div>
+                <h3>Expense Tracker</h3>
+                <p class="project-desc">
+                  Expense Tracker is an user-friendly application to track
+                  users' expenditures, and it enables users to filter and
+                  analyze expenses based on both month and year.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://expense-tracker-app-reactjs.vercel.app/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/expense-tracker-app"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Meme Generator -->
+            <div class="project">
+              <a
+                href="img/projects-img/project-meme-generator.png"
+                target="_blank"
+              >
+                <img
+                  src="img/projects-img/project-meme-generator.png"
+                  alt="Meme Generator image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                  <span class="react">React</span>
+                </div>
+                <h3>Meme Generator</h3>
+                <p class="project-desc">
+                  Meme Generator project allows visitors to create a meme by
+                  entering a top and bottom text on the image that is fetched
+                  from
+                  <a
+                    class="api-link"
+                    href="https://www.themoviedb.org/"
+                    target="_blank"
+                  >
+                    Imgflip API </a
+                  >.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://reactapp-meme-generator.vercel.app/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/meme-generator"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Guess The Number -->
+            <div class="project">
+              <a
+                href="img/projects-img/project-guess-the-number.png"
+                target="_blank"
+              >
+                <img
+                  src="img/projects-img/project-guess-the-number.png"
+                  alt="Guess The Number image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>Guess The Number</h3>
+                <p class="project-desc">
+                  The user is required to guess the number determined by the
+                  application. The user starts the game with 20 points, and for
+                  each incorrect guess, the score decreases by 1.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/guess-the-number/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/guess-the-number"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Music Player -->
+            <div class="project">
+              <a
+                href="img/projects-img/project-music-player.png"
+                target="_blank"
+              >
+                <img
+                  src="img/projects-img/project-music-player.png"
+                  alt="Music Player image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="bootstrap">Bootstrap</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>Music Player</h3>
+                <p class="project-desc">
+                  Many different songs have been hardcoded in the source of
+                  Music Player app. Site visitors are able to select the song
+                  they want to listen, change the sound level, or pause and
+                  replay the song.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/My-MusicPlayer/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/My-MusicPlayer"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Todo App -->
+            <div class="project">
+              <a href="img/projects-img/project-todo-app.png" target="_blank">
+                <img
+                  src="img/projects-img/project-todo-app.png"
+                  alt="Todo App image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="bootstrap">Bootstrap</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>Todo App</h3>
+                <p class="project-desc">
+                  Todo App is fully useful to organize daily tasks. It uses
+                  local storage of the user's device, and it allows users to add
+                  new tasks, edit them, and delete the completed ones. Moreover,
+                  the tasks can be displayed in different tabs such as "All",
+                  "Pending", "Completed".
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/My-to-do-App/public/index.html"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/My-to-do-App"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Quiz App -->
+            <div class="project">
+              <a href="img/projects-img/project-quizapp.png" target="_blank">
+                <img
+                  src="img/projects-img/project-quizapp.png"
+                  alt="Quiz App image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="bootstrap">Bootstrap</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>Quiz App</h3>
+                <p class="project-desc">
+                  Quiz App features hardcoded questions related to web
+                  development and a countdown timer for quick responses.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/QuizzzApp/public/index.html"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/QuizzzApp"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Dice Duel Game -->
+            <div class="project">
+              <a
+                href="img/projects-img/project-dice-duel-game.png"
+                target="_blank"
+              >
+                <img
+                  src="img/projects-img/project-dice-duel-game.png"
+                  alt="Dice Duel Game image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>Dice Duel</h3>
+                <p class="project-desc">
+                  Dice Duel is a fun two-player dice-rolling game. Continuously
+                  rolling the dice is good as long as you avoid rolling a 1, but
+                  remember the importance of holding your current score to
+                  increase your total score. Otherwise, rolling a 1 will reset
+                  your current score. The first player to reach a total score of
+                  100 wins the game.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/roll-the-dice/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/roll-the-dice"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Snake Game -->
+            <div class="project">
+              <a href="img/projects-img/project-snake-game.png" target="_blank">
+                <img
+                  src="img/projects-img/project-snake-game.png"
+                  alt="Snake Game image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>Snake Game</h3>
+                <p class="project-desc">
+                  Nostalgic snake game that is available on desktops is provided
+                  for users in this project. Eat the apples, but be careful
+                  about snake not to hit the walls or its own body.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/snake-game/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/snake-game"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Pac-Man Game -->
+            <div class="project">
+              <a href="img/projects-img/project-pac-man.png" target="_blank">
+                <img
+                  src="img/projects-img/project-pac-man.png"
+                  alt="Pac-Man Game image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>Pac-Man Game</h3>
+                <p class="project-desc">
+                  User must try to achieve 274 points to win the game. Collect
+                  pac dots for 1 point each and power pellets for 10 points
+                  each. Power pellets temporarily scare ghosts for 10 seconds,
+                  turning them gray and allowing Pac-Man to eat them for 100
+                  points. Beware, unscared ghosts can destroy Pac-Man.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/pac-man_game/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/pac-man_game"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Stop Watch -->
+            <div class="project">
+              <a href="img/projects-img/project-stop-watch.png" target="_blank">
+                <img
+                  src="img/projects-img/project-stop-watch.png"
+                  alt="Stop Watch image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>Stop Watch</h3>
+                <p class="project-desc">
+                  Stop Watch presents a simple timer that has a start, pause,
+                  and reset button.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/StopWatch/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/StopWatch"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Click and See -->
+            <div class="project">
+              <a
+                href="img/projects-img/project-click-and-see.png"
+                target="_blank"
+              >
+                <img
+                  src="img/projects-img/project-click-and-see.png"
+                  alt="Click and See image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>Click and See</h3>
+                <p class="project-desc">
+                  With Click and See project, I wanted the visitor to guess my
+                  favorite ones about specific topics.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/Click-and-See/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/Click-and-See"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Quote Generator -->
+            <div class="project">
+              <a
+                href="img/projects-img/project-quote-generator.png"
+                target="_blank"
+              >
+                <img
+                  src="img/projects-img/project-quote-generator.png"
+                  alt="Quote Generator image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>Quote Generator</h3>
+                <p class="project-desc">
+                  Quote Generator contains various hardcoded legendary movie
+                  quotes into its source. These quotes are displayed randomly on
+                  the page via a button.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/Movie-Quotes-Generator/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/Movie-Quotes-Generator"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Add User Tool -->
+            <div class="project">
+              <a
+                href="img/projects-img/project-add-user-tool.png"
+                target="_blank"
+              >
+                <img
+                  src="img/projects-img/project-add-user-tool.png"
+                  alt="Add User Tool image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                  <span class="react">React</span>
+                </div>
+                <h3>Add User Tool</h3>
+                <p class="project-desc">
+                  Add User Tool is a simple application that allows dynamically
+                  displaying the username and age information on the page.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://add-user-tool.vercel.app/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/add-user-tool"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Bored Bot -->
+            <div class="project">
+              <a href="img/projects-img/project-bored-bot.png" target="_blank">
+                <img
+                  src="img/projects-img/project-bored-bot.png"
+                  alt="Bored Bot image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>Bored Bot</h3>
+                <p class="project-desc">
+                  Bored Bot is a fun web page that provides activity ideas
+                  through the
+                  <a
+                    href="https://www.boredapi.com/"
+                    class="api-link"
+                    target="_blank"
+                    >Bored API</a
+                  >
+                  for people who are feeling bored.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/boredBot/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/boredBot"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Interactive Search Bar -->
+            <div class="project">
+              <a
+                href="img/projects-img/project-interactive-search-bar.png"
+                target="_blank"
+              >
+                <img
+                  src="img/projects-img/project-interactive-search-bar.png"
+                  alt="Interactive Search Bar image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>Interactive Search Bar</h3>
+                <p class="project-desc">
+                  This simple application tracks the user's keyboard inputs in
+                  real-time and displays relevant results on the screen
+                  accordingly.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/interactive-searchbar/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/interactive-searchbar"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Card War Game -->
+            <div class="project">
+              <a href="img/projects-img/project-card-game.png" target="_blank">
+                <img
+                  src="img/projects-img/project-card-game.png"
+                  alt="Card War Game image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>Card War Game</h3>
+                <p class="project-desc">
+                  Card War Game works by evaluating the many card data that is
+                  fetched from
+                  <a class="api-link" href="https://www.deckofcardsapi.com/"
+                    >Deck of Cards API</a
+                  >. Visitors can try the game out against the computer.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/card-war_API/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/card-war_API"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- The Greatest Lakers -->
+            <div class="project">
+              <a
+                href="img/projects-img/project-the-greatest-lakers.png"
+                target="_blank"
+              >
+                <img
+                  src="img/projects-img/project-the-greatest-lakers.png"
+                  alt="The Greatest Lakers image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>The Greatest Lakers</h3>
+                <p class="project-desc">
+                  It's a simple and user-friendly app that provides information
+                  about the top 5 players who have played for my favorite NBA
+                  team, designed to capture the interest of basketball fans.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/lakers-modal-window/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/lakers-modal-window"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Movie Posters Carousel -->
+            <div class="project">
+              <a href="img/projects-img/project-carousel.png" target="_blank">
+                <img
+                  src="img/projects-img/project-carousel.png"
+                  alt="Movie Posters image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>Movie Posters Carousel</h3>
+                <p class="project-desc">
+                  This carousel project displays some movie posters and allows
+                  user to navigate between the images.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/movie-posters-carousel/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/movie-posters-carousel"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Blog Space -->
+            <div class="project">
+              <a href="img/projects-img/project-blog-space.png" target="_blank">
+                <img
+                  src="img/projects-img/project-blog-space.png"
+                  alt="Blog Space image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>Blog Space</h3>
+                <p class="project-desc">
+                  With Blog Space, users can dynamically share a blog post on
+                  this page on any topic. The random content for existing posts
+                  is retrieved from the
+                  <a
+                    href="https://jsonplaceholder.typicode.com/"
+                    class="api-link"
+                    target="_blank"
+                    >JSONPlaceholder API</a
+                  >.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/BlogSpace/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/BlogSpace"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Motion Gym -->
+            <div class="project">
+              <a href="img/projects-img/project-motion-gym.png" target="_blank">
+                <img
+                  src="img/projects-img/project-motion-gym.png"
+                  alt="Motion Gym image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>Motion Gym</h3>
+                <p class="project-desc">
+                  Motion Gym is a fitness center website template which is built
+                  by HTML, CSS, and a little JavaScript
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://motion-gym.netlify.app/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/motion-gym"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Moviemaniax -->
+            <div class="project">
+              <a
+                href="img/projects-img/project-moviemaniax.png"
+                target="_blank"
+              >
+                <img
+                  src="img/projects-img/project-moviemaniax.png"
+                  alt="Moviemaniax image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="scss">SCSS</span>
+                </div>
+                <h3>Moviemaniax</h3>
+                <p class="project-desc">
+                  MovieManiax is a static website project featuring an HTML,
+                  CSS, and SASS-built user interface for a film archive and
+                  recommendation platform.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/moviemaniax/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/moviemaniax"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Autoblaze -->
+            <div class="project">
+              <a href="img/projects-img/project-autoblaze.png" target="_blank">
+                <img
+                  src="img/projects-img/project-autoblaze.png"
+                  alt="autoblaze image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="scss">SCSS</span>
+                </div>
+                <h3>Autoblaze</h3>
+                <p class="project-desc">
+                  Autoblaze project presents a luxury car store landing page.
+                  "Float" was used for overall layout to practice old school
+                  CSS.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/autoblaze/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/autoblaze"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Prime Agency -->
+            <div class="project">
+              <a
+                href="img/projects-img/project-prime-agency.png"
+                target="_blank"
+              >
+                <img
+                  src="img/projects-img/project-prime-agency.png"
+                  alt="Prime Agency image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JavaScript</span>
+                </div>
+                <h3>Prime Agency</h3>
+                <p class="project-desc">
+                  Prime Agency is a website template for an online
+                  service-providing agency with an pleasent design.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/prime-agency/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/prime-agency"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- MovieApp -->
+            <div class="project">
+              <a href="img/projects-img/project-movieapp.png" target="_blank">
+                <img
+                  src="img/projects-img/project-movieapp.png"
+                  alt="MovieApp image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                </div>
+                <h3>MovieApp</h3>
+                <p class="project-desc">
+                  MovieApp is a static movie page template formed with HTML and
+                  CSS.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/MovieApp/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/MovieApp"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- HiQu Hotel -->
+            <div class="project">
+              <a href="img/projects-img/project-hiqu-hotel.png" target="_blank">
+                <img
+                  src="img/projects-img/project-hiqu-hotel.png"
+                  alt="HiQu Hotel image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                </div>
+                <h3>HiQu Hotel</h3>
+                <p class="project-desc">
+                  HiQu Hotel is a static hotel page template formed with HTML
+                  and CSS.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/HiQu-Hotel/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/HiQu-Hotel"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Adventurous -->
+            <div class="project">
+              <a
+                href="img/projects-img/project-adventurous.png"
+                target="_blank"
+              >
+                <img
+                  src="img/projects-img/project-adventurous.png"
+                  alt="adproject-adventurous.png image"
+                />
+              </a>
+              <div class="project-info">
+                <div class="used-technologies">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="scss">SCSS</span>
+                </div>
+                <h3>Adventurous</h3>
+                <p class="project-desc">
+                  Adventurous is a travel guide interface which is built via CSS
+                  Grid Layout.
+                </p>
+              </div>
+              <div class="link-group">
+                <a
+                  class="go-web-page"
+                  href="https://barisemreyalcin.github.io/adventurous/"
+                  target="_blank"
+                  >Go to Page <i class="fa-solid fa-globe"></i
+                ></a>
+                <a
+                  class="go-github"
+                  href="https://github.com/barisemreyalcin/adventurous"
+                  target="_blank"
+                  >Go to GitHub <i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <ul class="social-links">
+          <li>
+            <a
+              href="https://github.com/barisemreyalcin"
+              class="social github"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/barisemreyalcin/"
+              class="social linkedin"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://instagram.com/b.e.y.art"
+              class="social instagram"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
         </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section id="projects" class="projects">
-    <main class="projects-content">
-      <div class="container projects-container">
-        <section class="section-header">
-          <h2>My Projects</h2>
-          <p class="section-intro">Putting my knowledge into practice and building projects has always pushed me one step further towards becoming a better developer. You can take a glance at some of my projects in this section.</p>
-        </section>
-        <section class="all-projects">
-          <!-- Motion -->
-          <div class="project">
-            <a href="img/project-motion.png" target="_blank">
-              <img src="img/project-motion.png" alt="Motion App image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-              </div>
-              <h3>Motion</h3>
-              <p class="project-desc">Motion app is designed based on object-oriented programming (OOP) principles. It can detect your current position on the map and allows you to mark your workout location thanks to <a class="api-link" href="https://leafletjs.com/" target="_blank">Leaflet.js</a>. Moreover, you can collect data for each workout and observe them in the sidebar.</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/motion/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/motion" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- Movie Search App -->
-          <div class="project">
-            <a href="img/project-movie-search.png" target="_blank">
-              <img src="img/project-movie-search.png" alt="Movie Search App image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-                <span class="react">React</span>
-              </div>
-              <h3>Movie Search App</h3>
-              <p class="project-desc">Movie information is fetched from <a class="api-link" href="https://www.themoviedb.org/" target="_blank"> The Movie Database (TMDB) API</a>. In this way, users can search for movies and see corresponding data on the web page.</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://movie-search-vite.vercel.app/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/movie-search-app" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- DevBey Portfolio -->
-          <div class="project">
-            <a href="img/project-portfolio.png" target="_blank">
-              <img src="img/project-portfolio.png" alt="Dev-Bey Portfolio image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-              </div>
-              <h3>DevBey Portfolio</h3>
-              <p class="project-desc">All visitors can check out the source code of this portfolio website coded by me that you are currently on.</p>
-              
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/dev-bey/index.html" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/dev-bey" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- Bank App -->
-          <div class="project">
-            <a href="img/project-bankapp.png" target="_blank">
-              <img src="img/project-bankapp.png" alt="Bank App image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-              </div>
-              <h3>Bank App</h3>
-              <p class="project-desc">Bank App allows you to perform and monitor real-time transactions. Log in using following credentials: <br>
-              &SmallCircle; User 1: bey & 8888 <br>
-              &SmallCircle; User 2: jt & 1111
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/bankapp/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/bankapp" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- SneakerHoops -->
-          <div class="project">
-            <a href="img/project-sneakerhoops.png" target="_blank">
-              <img src="img/project-sneakerhoops.png" alt="SneakerHoops image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-              </div>
-              <h3>SneakerHoops</h3>
-              <p class="project-desc">SneakerHoops is a template for an online shoe store with a professional design, allowing users to partially interact with the platform.</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/sneakerhoops/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/sneakerhoops" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- Momentum Dashboard -->
-          <div class="project">
-            <a href="img/project-dashboard.png" target="_blank">
-              <img src="img/project-dashboard.png" alt="Momentum Dashboard image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-              </div>
-              <h3>Momentum Dashboard</h3>
-              <p class="project-desc">Momentum Dashboard project operates as a browser extension allows user to use personalized dashboard on their browsers. It supplies many different data via <a class="api-link" href="https://unsplash.com/developers" target="_blank">Unsplash Image API</a>, <a class="api-link" href="https://openweathermap.org/api">Open Weather API</a>, <a class="api-link" href="https://www.coingecko.com/en/api" target="_blank">CoinGecko Crypto API</a>, and Geolocation.</p>
-              
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/momentum-personal-dashboard/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/momentum-personal-dashboard" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- Expense Tracker -->
-          <div class="project">
-            <a href="img/project-expense-tracker.png" target="_blank">
-              <img src="img/project-expense-tracker.png" alt="Expense Tracker image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-                <span class="react">React</span>
-              </div>
-              <h3>Expense Tracker</h3>
-              <p class="project-desc">Expense Tracker is an user-friendly application to track users' expenditures, and it enables users to filter and analyze expenses based on both month and year.</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://expense-tracker-app-reactjs.vercel.app/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/expense-tracker-app" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- Meme Generator -->
-          <div class="project">
-            <a href="img/project-meme-generator.png" target="_blank">
-              <img src="img/project-meme-generator.png" alt="Meme Generator image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-                <span class="react">React</span>
-              </div>
-              <h3>Meme Generator</h3>
-              <p class="project-desc">Meme Generator project allows visitors to create a meme by entering a top and bottom text on the image that is fetched from <a class="api-link" href="https://www.themoviedb.org/" target="_blank"> Imgflip API </a>.</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://reactapp-meme-generator.vercel.app/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/meme-generator" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- Guess The Number -->
-          <div class="project">
-            <a href="img/project-guess-the-number.png" target="_blank">
-              <img src="img/project-guess-the-number.png" alt="Guess The Number image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-              </div>
-              <h3>Guess The Number</h3>
-              <p class="project-desc">The user is required to guess the number determined by the application. The user starts the game with 20 points, and for each incorrect guess, the score decreases by 1.</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/guess-the-number/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/guess-the-number" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- Music Player -->
-          <div class="project">
-            <a href="img/project-music-player.png" target="_blank">
-              <img src="img/project-music-player.png" alt="Music Player image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="bootstrap">Bootstrap</span>
-                <span class="js">JavaScript</span>
-              </div>
-              <h3>Music Player</h3>
-              <p class="project-desc">Many different songs have been hardcoded in the source of Music Player app. Site visitors are able to select the song they want to listen, change the sound level, or pause and replay the song.</p>
-              
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/My-MusicPlayer/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/My-MusicPlayer" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- Todo App -->
-          <div class="project">
-            <a href="img/project-todo-app.png" target="_blank">
-              <img src="img/project-todo-app.png" alt="Todo App image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="bootstrap">Bootstrap</span>
-                <span class="js">JavaScript</span>
-              </div>
-              <h3>Todo App</h3>
-              <p class="project-desc">Todo App is fully useful to organize daily tasks. It uses local storage of the user's device, and it allows users to add new tasks, edit them, and delete the completed ones. Moreover, the tasks can be displayed in different tabs such as "All", "Pending", "Completed".</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/My-to-do-App/public/index.html" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/My-to-do-App" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- Quiz App -->
-          <div class="project">
-            <a href="img/project-quizapp.png" target="_blank">
-              <img src="img/project-quizapp.png" alt="Quiz App image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="bootstrap">Bootstrap</span>
-                <span class="js">JavaScript</span>
-              </div>
-              <h3>Quiz App</h3>
-              <p class="project-desc">Quiz App features hardcoded questions related to web development and a countdown timer for quick responses.</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/QuizzzApp/public/index.html" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/QuizzzApp" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- Dice Duel Game -->
-          <div class="project">
-            <a href="img/project-dice-duel-game.png" target="_blank">
-              <img src="img/project-dice-duel-game.png" alt="Dice Duel Game image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-              </div>
-              <h3>Dice Duel</h3>
-              <p class="project-desc">Dice Duel is a fun two-player dice-rolling game. Continuously rolling the dice is good as long as you avoid rolling a 1, but remember the importance of holding your current score to increase your total score. Otherwise, rolling a 1 will reset your current score. The first player to reach a total score of 100 wins the game.</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/roll-the-dice/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/roll-the-dice" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- Snake Game -->
-          <div class="project">
-            <a href="img/project-snake-game.png" target="_blank">
-              <img src="img/project-snake-game.png" alt="Snake Game image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-              </div>
-              <h3>Snake Game</h3>
-              <p class="project-desc">Nostalgic snake game that is available on desktops is provided for users in this project. Eat the apples, but be careful about snake not to hit the walls or its own body. </p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/snake-game/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/snake-game" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- Pac-Man Game -->
-          <div class="project">
-            <a href="img/project-pac-man.png" target="_blank">
-              <img src="img/project-pac-man.png" alt="Pac-Man Game image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-              </div>
-              <h3>Pac-Man Game</h3>
-              <p class="project-desc">User must try to achieve 274 points to win the game. Collect pac dots for 1 point each and power pellets for 10 points each. Power pellets temporarily scare ghosts for 10 seconds, turning them gray and allowing Pac-Man to eat them for 100 points. Beware, unscared ghosts can destroy Pac-Man.</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/pac-man_game/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/pac-man_game" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- Stop Watch -->
-          <div class="project">
-            <a href="img/project-stop-watch.png" target="_blank">
-              <img src="img/project-stop-watch.png" alt="Stop Watch image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-              </div>
-              <h3>Stop Watch</h3>
-              <p class="project-desc">Stop Watch presents a simple timer that has a start, pause, and reset button.</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/StopWatch/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/StopWatch" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- Click and See -->
-          <div class="project">
-            <a href="img/project-click-and-see.png" target="_blank">
-              <img src="img/project-click-and-see.png" alt="Click and See image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-              </div>
-              <h3>Click and See</h3>
-              <p class="project-desc">With Click and See project, I wanted the visitor to guess my favorite ones about specific topics.</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/Click-and-See/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/Click-and-See" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- Quote Generator -->
-          <div class="project">
-            <a href="img/project-quote-generator.png" target="_blank">
-              <img src="img/project-quote-generator.png" alt="Quote Generator image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-              </div>
-              <h3>Quote Generator</h3>
-              <p class="project-desc">Quote Generator contains various hardcoded legendary movie quotes into its source. These quotes are displayed randomly on the page via a button.</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/Movie-Quotes-Generator/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/Movie-Quotes-Generator" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- Add User Tool -->
-          <div class="project">
-            <a href="img/project-add-user-tool.png" target="_blank">
-              <img src="img/project-add-user-tool.png" alt="Add User Tool image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-                <span class="react">React</span>
-              </div>
-              <h3>Add User Tool</h3>
-              <p class="project-desc">Add User Tool is a simple application that allows dynamically displaying the username and age information on the page.</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://add-user-tool.vercel.app/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/add-user-tool" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- Bored Bot -->
-          <div class="project">
-            <a href="img/project-bored-bot.png" target="_blank">
-              <img src="img/project-bored-bot.png" alt="Bored Bot image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-              </div>
-              <h3>Bored Bot</h3>
-              <p class="project-desc">Bored Bot is a fun web page that provides activity ideas through the <a href="https://www.boredapi.com/" class="api-link" target="_blank">Bored API</a> for people who are feeling bored.</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/boredBot/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/boredBot" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- Interactive Search Bar -->
-          <div class="project">
-            <a href="img/project-interactive-search-bar.png" target="_blank">
-              <img src="img/project-interactive-search-bar.png" alt="Interactive Search Bar image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-              </div>
-              <h3>Interactive Search Bar</h3>
-              <p class="project-desc">This simple application tracks the user's keyboard inputs in real-time and displays relevant results on the screen accordingly.</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/interactive-searchbar/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/interactive-searchbar" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- Card War Game -->
-          <div class="project">
-            <a href="img/project-card-game.png" target="_blank">
-              <img src="img/project-card-game.png" alt="Card War Game image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-              </div>
-              <h3>Card War Game</h3>
-              <p class="project-desc">Card War Game works by evaluating the many card data that is fetched from <a class="api-link" href="https://www.deckofcardsapi.com/">Deck of Cards API</a>. Visitors can try the game out against the computer.</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/card-war_API/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/card-war_API" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- The Greatest Lakers -->
-          <div class="project">
-            <a href="img/project-the-greatest-lakers.png" target="_blank">
-              <img src="img/project-the-greatest-lakers.png" alt="The Greatest Lakers image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-              </div>
-              <h3>The Greatest Lakers</h3>
-              <p class="project-desc">It's a simple and user-friendly app that provides information about the top 5 players who have played for my favorite NBA team, designed to capture the interest of basketball fans.</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/lakers-modal-window/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/lakers-modal-window" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- Movie Posters Carousel -->
-          <div class="project">
-            <a href="img/project-carousel.png" target="_blank">
-              <img src="img/project-carousel.png" alt="Movie Posters image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-              </div>
-              <h3>Movie Posters Carousel</h3>
-              <p class="project-desc">This carousel project displays some movie posters and allows user to navigate between the images.</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/movie-posters-carousel/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/movie-posters-carousel" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- Blog Space -->
-          <div class="project">
-            <a href="img/project-blog-space.png" target="_blank">
-              <img src="img/project-blog-space.png" alt="Blog Space image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-              </div>
-              <h3>Blog Space</h3>
-              <p class="project-desc">With Blog Space, users can dynamically share a blog post on this page on any topic. The random content for existing posts is retrieved from the <a href="https://jsonplaceholder.typicode.com/" class="api-link" target="_blank">JSONPlaceholder API</a>.</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/BlogSpace/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/BlogSpace" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- Prime Agency -->
-          <div class="project">
-            <a href="img/project-prime-agency.png" target="_blank">
-              <img src="img/project-prime-agency.png" alt="Prime Agency image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript</span>
-              </div>
-              <h3>Prime Agency</h3>
-              <p class="project-desc">Prime Agency is a website template for an online service-providing agency with an pleasent design.</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/prime-agency/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/prime-agency" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- MovieApp -->
-          <div class="project">
-            <a href="img/project-movieapp.png" target="_blank">
-              <img src="img/project-movieapp.png" alt="MovieApp image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-              </div>
-              <h3>MovieApp</h3>
-              <p class="project-desc">MovieApp is a static movie page template formed with HTML and CSS.</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/MovieApp/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/MovieApp" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <!-- HiQu Hotel -->
-          <div class="project">
-            <a href="img/project-hiqu-hotel.png" target="_blank">
-              <img src="img/project-hiqu-hotel.png" alt="HiQu Hotel image">
-            </a>
-            <div class="project-info">
-              <div class="used-technologies">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-              </div>
-              <h3>HiQu Hotel</h3>
-              <p class="project-desc">HiQu Hotel is a static hotel page template formed with HTML and CSS.</p>
-            </div>
-            <div class="link-group">
-              <a class="go-web-page" href="https://barisemreyalcin.github.io/HiQu-Hotel/" target="_blank">Go to Page <i class="fa-solid fa-globe"></i></a>
-              <a class="go-github" href="https://github.com/barisemreyalcin/HiQu-Hotel" target="_blank">Go to GitHub <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-        </section>
+        <p class="copyright">
+          Copyright © 2023 DevBey, Barış Emre Yalçın - All rights reserved.
+        </p>
       </div>
-    </main>
-  </section>
+    </footer>
 
-  <footer class="footer">
-    <div class="container footer-container">
-      <ul class="social-links">
-        <li>
-          <a href="https://github.com/barisemreyalcin" class="social github" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/barisemreyalcin/" class="social linkedin" target="_blank">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://instagram.com/b.e.y.art" class="social instagram" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </li>
-      </ul>
-      <p class="copyright">Copyright © 2023 DevBey, Barış Emre Yalçın - All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="js/index.js"></script>
-</body>
+    <script src="js/index.js"></script>
+  </body>
 </html>
