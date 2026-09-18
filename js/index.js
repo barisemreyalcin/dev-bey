@@ -137,3 +137,18 @@ if (copyBtn) {
 } else {
   console.log("Copy button does not exist on this page.");
 }
+
+// Dynamic Age
+const birthDate = new Date("1996-11-24");
+
+const today = new Date();
+
+let dynamicAge = today.getFullYear() - birthDate.getFullYear();
+
+const month = today.getMonth() - birthDate.getMonth();
+
+if (month < 0 || (month === 0 && today.getDate() < birthDate.getDate())) {
+  dynamicAge--;
+}
+
+document.querySelector(".age").textContent = dynamicAge;
